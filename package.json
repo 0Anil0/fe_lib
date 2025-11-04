@@ -1,0 +1,34 @@
+{
+  "name": "ant-table-lib",
+  "version": "1.0.0",
+  "main": "dist/ant-table-lib.cjs.js",
+  "module": "dist/ant-table-lib.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ant-table-lib.es.js",
+      "require": "./dist/ant-table-lib.cjs.js"
+    }
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "antd": ">=5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "antd": "^5.20.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.0.0"
+  }
+}
