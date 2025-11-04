@@ -4,17 +4,12 @@ import path from 'path';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    dts({
-      insertTypesEntry: true, // generates index.d.ts
-    }),
-  ],
+  plugins: [react(), dts()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'AntTableLib',
-      fileName: (format) => `ant-table-lib.${format}.js`,
+      entry: 'src/index.ts',
+      name: 'fe_lib_dev_anil',
+      fileName: (format) => `fe-lib-dev-anil.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'antd'],
