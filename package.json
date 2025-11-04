@@ -1,9 +1,8 @@
 {
-  "name": "fe_lib_dev_anil",
+  "name": "ant-table-lib",
   "version": "1.0.0",
-"main": "dist/fe-lib-dev-anil.cjs.js",
-"module": "dist/fe-lib-dev-anil.es.js",
-
+  "main": "dist/ant-table-lib.cjs.js",
+  "module": "dist/ant-table-lib.es.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
